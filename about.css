@@ -1,0 +1,120 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.container{
+    width: 700px;
+    height:535px ;
+    background-color:white ;
+    margin: 0 auto; 
+    margin-top: 70px;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 40px;
+    font-weight: bolder;
+    
+    
+}
+
+p{
+  font-size: medium;
+  color: rgb(167, 165, 165);
+  margin-left: 6em;
+  
+
+}
+
+.RS{
+    color: crimson;
+    display: inline-block;
+    margin-left: -11em;
+
+}
+
+.c2 {
+    width: 45%;                /* left side width */
+    height: 500px;             /* adjust to your image height */
+    background: linear-gradient(to bottom, #26f513, #00c853);
+    float: left;
+    border-radius: 20px 0 0 20px;   /* optional: round corners */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px;
+     transform: translateX(-70px);
+}
+
+#myIMG {
+    height: 450px;
+    width: 450px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    
+}
+
+
+#myh3{
+  margin-left: 6em;
+}
+
+h1{
+  color: crimson;
+  display: inline-block;
+  margin-left: 0.1em;
+ 
+}
+
+.apple{
+  background-color: rgb(142, 230, 11);
+}
+
+
+
+#myg{
+   height:  90px;
+   width:  160px ;
+   margin-left: 4em;
+}
+
+li{
+    font-size: 15px;
+    color: rgb(77, 75, 75);
+    word-spacing:2%;
+    font-family:  sans-serif;
+    list-style-type: none;
+    text-align: left;
+    margin-left: 22em;
+    
+}
+
+li::before{
+  content: "💠";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MDN HTML Reference</title>
+  <link rel="stylesheet" href="./mdn.css">
+  <style>
+    html { scroll-behavior: smooth; }
+    #sections {
+      height: 90vh; /* make it scrollable */
+      overflow-y: auto;
+      padding-right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="head1">
+    <div style="height: 30px;width: 30px;">
+      <img class="img" src="./img/mdnlogo3-removebg-preview.png" alt="logo">
+    </div>
+
+    <section class="ank">
+      <a href="#html">HTML</a>
+      <a href="#css">CSS</a>
+      <a href="#javascript">JavaScript</a>
+      <a href="#web-apis">Web APIs</a>
+      <a href="#art">Art</a>
+      <a href="#learn">Learn</a>
+      <a href="#tools">Tools</a>
+      <a href="#about">About</a>
+      <a href="#blog">Blog</a>
+    </section>
+  </div>
+</header>
+
+<hr>
+
+<div id="container">
+
+<aside id="asides">
+  <div class="filter">
+    <input type="text" placeholder="Search...">
+  </div>
+
+  <nav class="menu">
+    <h4>HTML</h4>
+    <ul>
+      <li><a href="#guides">Guides</a></li>
+    </ul>
+
+    <h4>How to</h4>
+    <ul>
+      <li><a href="#define-terms">Define terms with HTML</a></li>
+      <li><a href="#data-attributes">Use data attributes</a></li>
+      <li><a href="#cors-images">Use cross-origin images</a></li>
+      <li><a href="#image-map">Add a hitmap on top of an image</a></li>
+      <li><a href="#fast-html">Author fast-loading HTML pages</a></li>
+      <li><a href="#add-js">Add JavaScript</a></li>
+    </ul>
+
+    <h4>Reference</h4>
+    <ul>
+      <li><a href="#elements-ref">Elements</a></li>
+    </ul>
+  </nav>
+</aside>
+
+<section id="sections">
+
+  <h1>HTML elements reference</h1>
+
+  <h4 class="intro">
+    This page lists all the HTML elements and tags used to structure content.
+  </h4>
+
+  <p>
+    They are grouped by function to help you find them quickly.
+  </p>
+
+  <!-- anchors -->
+  <span id="guides"></span>
+  <span id="define-terms"></span>
+  <span id="data-attributes"></span>
+  <span id="cors-images"></span>
+  <span id="image-map"></span>
+  <span id="fast-html"></span>
+  <span id="add-js"></span>
+  <span id="elements-ref"></span>
+
+  <!-- Guides Section -->
+  <h1>Guides</h1>
+  <p>HTML, CSS, and JS guides with examples and explanations.</p>
+
+  <!-- Define Terms -->
+  <h2 id="define-terms">Define terms with HTML</h2>
+  <p>
+    The <code>&lt;dfn&gt;</code> element defines a term. Example:
+  </p>
+  <pre><code>&lt;p&gt;The term &lt;dfn&gt;API&lt;/dfn&gt; refers to...&lt;/p&gt;</code></pre>
+
+  <!-- Data Attributes -->
+  <h2 id="data-attributes">Use data attributes</h2>
+  <p>
+    Data attributes (<code>data-*</code>) store custom data inside elements:
+  </p>
+  <pre><code>&lt;div data-user="123"&gt;Hello&lt;/div&gt;
+console.log(document.querySelector('div').dataset.user); // 123
+</code></pre>
+
+  <!-- Cross-origin Images -->
+  <h2 id="cors-images">Use cross-origin images</h2>
+  <p>
+    Cross-origin images require proper CORS headers and the <code>crossorigin</code> attribute:
+  </p>
+  <pre><code>&lt;img src="https://example.com/image.jpg" crossorigin="anonymous"&gt;</code></pre>
+
+  <!-- Image Map -->
+  <h2 id="image-map">Add a hitmap on top of an image</h2>
+  <p>
+    Define clickable areas inside an image using <code>&lt;map&gt;</code> and <code>&lt;area&gt;</code>:
+  </p>
+  <pre><code>
+&lt;img src="example.jpg" usemap="#map"&gt;
+&lt;map name="map"&gt;
+  &lt;area shape="rect" coords="34,44,270,350" href="#section1"&gt;
+&lt;/map&gt;
+  </code></pre>
+
+  <!-- Fast HTML -->
+  <h2 id="fast-html">Author fast-loading HTML pages</h2>
+  <p>
+    Minimize CSS/JS, optimize images, and use semantic tags for performance.
+  </p>
+
+  <!-- Add JavaScript -->
+  <h2 id="add-js">Add JavaScript</h2>
+  <p>
+    Add dynamic behavior to your page with JS:
+  </p>
+  <pre><code>&lt;button onclick="alert('Hello!')"&gt;Click Me&lt;/button&gt;</code></pre>
+
+  <!-- Elements Reference Table -->
+  <h2 id="elements-ref">Elements Reference</h2>
+  <table class="mdn-table">
+    <thead>
+      <tr><th>Element</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>&lt;html&gt;</code></td><td>Root element of the document.</td></tr>
+      <tr><td><code>&lt;head&gt;</code></td><td>Contains metadata.</td></tr>
+      <tr><td><code>&lt;body&gt;</code></td><td>Contains visible content.</td></tr>
+      <tr><td><code>&lt;title&gt;</code></td><td>Page title.</td></tr>
+      <tr><td><code>&lt;link&gt;</code></td><td>Links CSS or other resources.</td></tr>
+      <tr><td><code>&lt;meta&gt;</code></td><td>Metadata for charset, viewport, etc.</td></tr>
+    </tbody>
+  </table>
+
+  <!-- Larger Sections for Top Nav -->
+  <h1 id="html">HTML</h1>
+  <p>HTML structures the content of web pages using elements and tags. Semantic HTML is important for accessibility.</p>
+
+  <h1 id="css">CSS</h1>
+  <p>CSS controls layout, colors, typography, and responsive design. Use selectors, media queries, and flex/grid for layouts.</p>
+
+  <h1 id="javascript">JavaScript</h1>
+  <p>JS enables interactivity, DOM manipulation, and network requests. ES6+ provides modern syntax for better coding.</p>
+
+  <h1 id="web-apis">Web APIs</h1>
+  <p>APIs allow JavaScript to access browser features like Fetch, LocalStorage, Geolocation, Canvas, and Web Audio.</p>
+
+  <h1 id="art">Art</h1>
+  <p>Digital art includes SVG graphics, Canvas animations, and creative coding.</p>
+
+  <h1 id="learn">Learn</h1>
+  <p>Learn web development basics, including HTML, CSS, JS, and modern frameworks.</p>
+
+  <h1 id="tools">Tools</h1>
+  <p>Tools like VS Code, Chrome DevTools, and version control help developers work efficiently.</p>
+
+  <h1 id="about">About</h1>
+  <p>This project is inspired by MDN Web Docs for learning HTML references.</p>
+
+  <h1 id="blog">Blog</h1>
+  <p>Articles, tutorials, and web development updates.</p>
+
+</section>
+
+<article id="articles">
+  <section class="atc">
+    <a href="#main-root">Main root</a>
+    <a href="#document-metadata">Document metadata</a>
+    <a href="#define-terms">Define terms with HTML</a>
+    <a href="#data-attributes">Use data attributes</a>
+    <a href="#cors-images">Use cross-origin images</a>
+    <a href="#image-map">Add a hitmap</a>
+    <a href="#fast-html">Fast-loading HTML pages</a>
+    <a href="#add-js">Add JavaScript</a>
+    <a href="#elements-ref">Elements Reference</a>
+  </section>
+</article>
+
+</div>
+
+</body>
+</html>
